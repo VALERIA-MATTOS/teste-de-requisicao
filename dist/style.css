@@ -3,7 +3,10 @@ body{margin:20px auto; padding:0 10px 0 10px;}
 html{height:100%; width: 100%;}
 body{height:auto; width: 100%;}
 
-.content {width: 780px; height: 620px; background-color:#b3d9ff; text-align: center; margin: 0 auto; box-shadow:0 0 20px #444; font-size: 120%;}
-select {width: 300px;font-size: 100%;}
-table {margin: 0 auto;background: white;width: 300px;}
-h1{color: #003366;}
+.content {width: 780px; height: 400px; background-color:#ccccff; text-align: center; margin: 0 auto; box-shadow:0 0 20px #000033; font-size: 120%;}
+
+select {width: 480px; font-size: 100%; border-color: #0000e6; font-weight: bold; box-shadow:0 -2px 20px #000033; }
+table {margin: 0 auto; background: white; width: 480px; border-color: #0000e6; border-top: none; box-shadow:0 0 20px #000033;}
+
+h1{color: #003366; text-shadow: 0 0 8px black;}
+th,tr {width: 120px;}
