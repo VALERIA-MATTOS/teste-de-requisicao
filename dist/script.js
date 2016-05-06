@@ -13,11 +13,16 @@ function buscarproduto(){
 	$.getJSON('http://192.168.1.109:8080/list', function(data){
 		var i=$('#produtos').val();
 		var result='';
-		result+='<table border="1"><tr><th>Produto</th><th>Valor</th><th>Status</th><th>Estoque</th></tr>';
-		result+='<tr><td>' + data[i-1].nome + '</td>' ;
-		result+='<td> R$' + data[i-1].valor + '</td>';
-		result+='<td>' + data[i-1].status + '</td>';
-		result+='<td>' + data[i-1].estoque + '</td></tr>';
-		$('#resultado').html(result);
+		if (i>=0){
+			result+='<table border="1"><tr><th>Produto</th><th>Valor</th><th>Status</th><th>Estoque</th></tr>';
+			result+='<tr><td>' + data[i-1].nome + '</td>' ;
+			result+='<td> R$' + data[i-1].valor + '</td>';
+			result+='<td>' + data[i-1].status + '</td>';
+			result+='<td>' + data[i-1].estoque + '</td></tr></table>';
+			$('#resultado').html(result);
+		}
+		else {
+			$('#resultado').html('');
+		}
 	});
 };
