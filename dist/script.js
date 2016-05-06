@@ -10,19 +10,19 @@ $(document).ready(function(){
 });
 
 function buscarproduto(){
-	$.getJSON('http://192.168.1.109:8080/list', function(data){
-		var i=$('#produtos').val();
-		var result='';
-		if (i>=0){
+	var i=$('#produtos').val();
+	if (i>=0){
+		$.getJSON('http://192.168.1.109:8080/product?chave='+i, function(data){
+			var result='';
 			result+='<table border="1"><tr><th>Produto</th><th>Valor</th><th>Status</th><th>Estoque</th></tr>';
-			result+='<tr><td>' + data[i-1].nome + '</td>' ;
-			result+='<td> R$' + data[i-1].valor + '</td>';
-			result+='<td>' + data[i-1].status + '</td>';
-			result+='<td>' + data[i-1].estoque + '</td></tr></table>';
+			result+='<tr><td>' + data.nome + '</td>' ;
+			result+='<td> R$' + data.valor + '</td>';
+			result+='<td>' + data.status + '</td>';
+			result+='<td>' + data.estoque + '</td></tr></table>';
 			$('#resultado').html(result);
-		}
-		else {
+		});
+	}
+	else {
 			$('#resultado').html('');
-		}
-	});
+	}
 };
