@@ -1,7 +1,8 @@
-html{margin:0 auto; padding:0; background:#ccccff;height:100%; width: 100%;}
-body{margin:20px auto; padding:1%; background-color:#ccccff; height:auto; width: 100%;}
+html {margin:0 auto; background:#ccccff; height:100%; width: 100%;}
+body {margin:0 auto; background:#ccccff; height:100%; width: 100%; background-image: url("../img/background.jpg");}
 
-.content {width: 680px; height: 100%; padding:1% 1% 5% 1%;; margin: 0 auto; text-align: center; background:#000033; box-shadow:0 0 30px #4d4dff; font-size: 120%; border-radius: 10px;}
+.barrasuperior {width: 100%; height: auto; padding:1px;  margin-bottom: 2%; text-align: center; background:#000033; box-shadow:0 0 30px #4d4dff; font-size: 150%;}
+.content {width: 680px; height: auto; padding:1% 1% 5% 1%;; margin: 0 auto; text-align: center; background:#000033; box-shadow:0 0 30px #4d4dff; font-size: 120%; border-radius: 10px;}
 #selecao {box-shadow:0 0 15px #4d4dff; width: 480px; margin: 0 auto;}
 
 select {width: 100%; margin: 0 auto; background:#ccccff; border-color: #0000e6; font-size: 100%; font-weight: bold;}
