@@ -2,7 +2,7 @@ $(document).ready(function(){
 	$.getJSON('http://192.168.1.109:8080/list', function(data){
 		var list='<option value="#"> Selecione uma opção. </option>';
 		for (var x=0; x<data.length;x++){
-			list+='<option value='+data[x].chave+'>' +data[x].nome+ '</option>';
+			list+='<option value='+data[x].chave+'>' + data[x].nome + '</option>';
 		}
 		list+='<option value=-1> exibir todos produtos </option>';
 		$('#produtos').html(list);

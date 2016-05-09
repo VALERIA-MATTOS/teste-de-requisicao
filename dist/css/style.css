@@ -1,9 +1,9 @@
 html{margin:0 auto; padding:0; background:#ccccff;}
-body{margin:20px auto; padding:1%; background:#ccccff;}
+body{margin:20px auto; padding:1%; background-color:#ccccff; }
 html{height:100%; width: 100%;}
 body{height:auto; width: 100%;}
 
-.content {width: 680px; height: 100%; padding:20px 10px 80px 10px; margin: 0 auto; text-align: center; background:#000033; box-shadow:0 0 30px #4d4dff; font-size: 120%; border-radius: 10px;}
+.content {width: 680px; height: 100%; padding:1% 1% 5% 1%;; margin: 0 auto; text-align: center; background:#000033; box-shadow:0 0 30px #4d4dff; font-size: 120%; border-radius: 10px;}
 #selecao {box-shadow:0 0 15px #4d4dff; width: 480px; margin: 0 auto;}
 
 select {width: 100%; margin: 0 auto; background:#ccccff; border-color: #0000e6; font-size: 100%; font-weight: bold;}
@@ -14,7 +14,7 @@ th,tr {width: 120px;}
 
 @media only screen and (min-width: 200px) and (max-width: 349px){
 	body {padding: 1%;}
-	.content {width: 80%; margin: 0 auto; padding:1% 1% 15% 1%;}
+	.content {width: 80%; margin: 0 auto; padding:1% 1% 5% 1%;}
 	#selecao {width: 100%; margin: 0 auto;box-shadow: none;}
 
 	select {font-size: 70%;}
@@ -24,7 +24,7 @@ th,tr {width: 120px;}
 
 @media only screen and (min-width: 350px) and (max-width: 480px){
 	body {padding: 1%;}
-	.content {width: 90%; margin: 0 auto; padding:1% 1% 15% 1%;}
+	.content {width: 90%; margin: 0 auto; padding:1% 1% 5% 1%;}
 	#selecao {width: 90%; margin: 0 auto;box-shadow: none;}
 
 	select {font-size: 90%;}
@@ -34,7 +34,7 @@ th,tr {width: 120px;}
 
 @media only screen and (min-width: 481px) and (max-width: 801px){
 	body {padding: 1%;}
-	.content {width: 80%; margin: 0 auto; padding:1% 1% 15% 1%;}
+	.content {width: 80%; margin: 0 auto; padding:1% 1% 5% 1%;}
 	#selecao {width: 80%; margin: 0 auto;box-shadow: none;}
 
 	select {font-size: 100%;}
@@ -48,6 +48,6 @@ th,tr {width: 120px;}
 	html{height:100%; width: 100%;}
 	body{height:auto; width: 100%;}
 
-	.content {width: 680px; height: 100%; padding:1% 1% 15% 1%;; margin: 0 auto;}
+	.content {width: 680px; height: 100%; padding:1% 1% 5% 1%;; margin: 0 auto;}
 	#selecao {box-shadow:0 0 15px #4d4dff; width: 480px; margin: 0 auto;}
 }
