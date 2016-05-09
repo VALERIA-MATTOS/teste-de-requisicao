@@ -4,7 +4,7 @@ $(document).ready(function(){
 		for (var x=0; x<data.length;x++){
 			list+='<option value='+data[x].chave+'>' + data[x].nome + '</option>';
 		}
-		list+='<option value=-1> exibir todos produtos </option>';
+		list+='<option value="@"> exibir todos produtos </option>';
 		$('#produtos').html(list);
 	});
 });
@@ -26,7 +26,7 @@ function buscarproduto(){
 		if (i=="#"){
 			$('#resultado').html('');
 		}
-		else if (i<0){
+		else if (i=="@"){
 			$.getJSON('http://192.168.1.109:8080/list', function(data){
 				var result='';
 				result+='<table border="1"><tr><th>Produto</th><th>Valor</th><th>Status</th><th>Estoque</th></tr><tr>';
