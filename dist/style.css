@@ -1,0 +1,35 @@
+html{margin:0 auto; padding:0; background:#ccccff;height:100%; width: 100%;}
+body{margin:20px auto; padding:1%; background-color:#ccccff; height:auto; width: 100%;}
+
+.content {width: 680px; height: 100%; padding:1% 1% 5% 1%;; margin: 0 auto; text-align: center; background:#000033; box-shadow:0 0 30px #4d4dff; font-size: 120%; border-radius: 10px;}
+#selecao {box-shadow:0 0 15px #4d4dff; width: 480px; margin: 0 auto;}
+
+select {width: 100%; margin: 0 auto; background:#ccccff; border-color: #0000e6; font-size: 100%; font-weight: bold;}
+table {width: 100%; margin: 0 auto; background:#ccccff; border-color: #0000e6; border-top: none;}
+h1{color: #ccccff; text-shadow: 0 0 20px #4d4dff;}
+th,tr {width: 120px;}
+
+@media only screen and (min-width: 200px) and (max-width: 349px){
+	.content {width: 80%;}
+	#selecao {width: 100%; box-shadow: none;}
+
+	select {font-size: 70%;}
+	table {font-size: 55%;}
+	h1 {font-size: 130%;}
+}
+
+@media only screen and (min-width: 350px) and (max-width: 480px){
+	.content {width: 90%;}
+	#selecao {width: 90%; box-shadow: none;}
+
+	select, table {font-size: 90%;}
+	h1 {font-size: 130%;}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 801px){
+	.content {width: 80%;}
+	#selecao {width: 80%; box-shadow: none;}
+
+	select, table {font-size: 100%;}
+	h1 {font-size: 190%;}
+}
