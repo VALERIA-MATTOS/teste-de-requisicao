@@ -1,5 +1,7 @@
+var endereco='http://192.168.1.109:8080';
+
 $(document).ready(function(){
-	$.getJSON('http://192.168.1.109:8080/list', function(data){
+	$.getJSON(endereco + '/list', function(data){
 		var list='<option value="#"> Selecione uma opção. </option>';
 		for (var x=0; x<data.length;x++){
 			list+='<option value='+data[x].chave+'>' + data[x].nome + '</option>';
@@ -12,7 +14,7 @@ $(document).ready(function(){
 function buscarproduto(){
 	var i=$('#produtos').val();
 	if (i>=0){
-		$.getJSON('http://192.168.1.109:8080/product?chave='+i, function(data){
+		$.getJSON(endereco + '/product?chave='+i, function(data){
 			var result='';
 			result+='<table border="1"><tr><th>Produto</th><th>Valor</th><th>Status</th><th>Estoque</th></tr>';
 			result+='<tr><td>' + data.nome + '</td>' ;
@@ -27,7 +29,7 @@ function buscarproduto(){
 			$('#resultado').html('');
 		}
 		else if (i=="@"){
-			$.getJSON('http://192.168.1.109:8080/list', function(data){
+			$.getJSON(endereco + '/list', function(data){
 				var result='';
 				result+='<table border="1"><tr><th>Produto</th><th>Valor</th><th>Status</th><th>Estoque</th></tr><tr>';
 				for (n=0; n<data.length; n++){
