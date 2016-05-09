@@ -22,8 +22,7 @@ th,tr {width: 120px;}
 	.content {width: 90%;}
 	#selecao {width: 90%; box-shadow: none;}
 
-	select {font-size: 90%;}
-	table {font-size: 90%;}
+	select, table {font-size: 90%;}
 	h1 {font-size: 130%;}
 }
 
@@ -31,7 +30,6 @@ th,tr {width: 120px;}
 	.content {width: 80%;}
 	#selecao {width: 80%; box-shadow: none;}
 
-	select {font-size: 100%;}
-	table {font-size: 100%;}
+	select, table {font-size: 100%;}
 	h1 {font-size: 190%;}
 }
