@@ -32,13 +32,13 @@ function buscarproduto(){
 }
 
 function limpar(i){
-	if (i=="#"){
+	if (i==="#"){
 		$('#resultado').html('');
 	}
 }
 
 function todosprodutos (i){
-	if (i=="@"){
+	if (i==="@"){
 		$.getJSON(endereco + '/list', function(data){
 			var result='';
 			result+='<table border="1"><tr><th>Produto</th><th>Valor</th><th>Status</th><th>Estoque</th></tr><tr>';
